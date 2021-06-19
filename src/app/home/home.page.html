@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Centro de notificaciones
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-justify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ab
+      necessitatibus cum est ea et quam consequuntur impedit accusamus
+      perferendis, distinctio corporis architecto! Reiciendis facere
+      perspiciatis et quibusdam temporibus sapiente.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button (click)="notificationSchedule()" expand="block" shape="round">
+    Notificacion local simple
+  </ion-button>
+
 </ion-content>
